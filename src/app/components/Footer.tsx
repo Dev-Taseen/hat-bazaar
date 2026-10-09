@@ -1,11 +1,9 @@
-
-
 const Footer = () => {
     return (
-        <div className='flex gap-15 justify-between items-center'>
-            <h2 className='text-[16px] text-gray-500 my-7 mx-15'>বাজার দর — প্রয়োজনীয় পণ্যের দাম এক নজরে।</h2>
-            <h2 className='text-[16px] text-gray-500 my-7 mx-15'>সকল দাম সম্ভাব্য; বাজার অবস্থার ওপর নির্ভর করে পরিবর্তিত হয়।</h2>
-        </div>
+        <footer className="container mx-auto flex flex-col items-center justify-between gap-2 px-4 py-6 text-center text-sm text-gray-500 md:flex-row md:gap-6 md:text-left md:text-base">
+            <p className="cursor-pointer">বাজার দর — প্রয়োজনীয় পণ্যের দাম এক নজরে।</p>
+            <p className="cursor-pointer">সকল দাম সম্ভাব্য; বাজার অবস্থার ওপর নির্ভর করে পরিবর্তিত হয়।</p>
+        </footer>
     );
 };
 
