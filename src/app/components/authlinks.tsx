@@ -39,7 +39,7 @@ const AuthLinks = () => {
                     </button>
                 </div>
             ) : (
-                <div>
+                <div className=' flex gap-2.5'>
                     <Link href='/sign_in'><button className='btn rounded'>সাইন ইন</button></Link>
                     <Link href='/sign_up'><button className='btn bg-green-600 text-white rounded'>সাইন আপ</button></Link>
                 </div>
