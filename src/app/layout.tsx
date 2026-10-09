@@ -14,7 +14,7 @@ const NotoSerifBengali = Noto_Serif_Bengali({
 
 export const metadata: Metadata = {
   title: {
-    default: "বাজার দর",
+    default: "হাট বাজার",
     template: "%s | বাজার দর",
   },
 };
