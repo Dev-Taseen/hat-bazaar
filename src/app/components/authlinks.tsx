@@ -33,15 +33,26 @@ const AuthLinks = () => {
 
                     <button
                         onClick={handleSignOut}
-                        className='text-[14px] rounded p-1.5 border border-gray-400 bg-green-700 text-white cursor-pointer'
+                        className='inline-flex items-center justify-center rounded-xl border-2 border-green-600 bg-gradient-to-r from-green-600 to-emerald-500 px-5 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:from-green-700 hover:to-emerald-600 hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-green-500 focus-visible:ring-offset-2 active:translate-y-0 active:scale-[0.98]'
                     >
                         সাইন আউট
                     </button>
                 </div>
             ) : (
-                <div className=' flex gap-2.5'>
-                    <Link href='/sign_in'><button className='btn rounded'>সাইন ইন</button></Link>
-                    <Link href='/sign_up'><button className='btn bg-green-600 text-white rounded'>সাইন আপ</button></Link>
+                <div className="flex items-center gap-2.5">
+                    <Link
+                        href="/sign_in"
+                        className="inline-flex items-center justify-center rounded-xl border-2 border-green-600 bg-transparent px-5 py-2 text-sm font-semibold text-green-700 transition-all duration-200 hover:-translate-y-0.5 hover:bg-green-50 hover:shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-green-500 focus-visible:ring-offset-2 active:translate-y-0 active:scale-[0.98]"
+                    >
+                        সাইন ইন
+                    </Link>
+
+                    <Link
+                        href="/sign_up"
+                        className="inline-flex items-center justify-center rounded-xl border-2 border-green-600 bg-gradient-to-r from-green-600 to-emerald-500 px-5 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:from-green-700 hover:to-emerald-600 hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-green-500 focus-visible:ring-offset-2 active:translate-y-0 active:scale-[0.98]"
+                    >
+                        সাইন আপ
+                    </Link>
                 </div>
             )}
         </>
