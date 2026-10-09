@@ -16,7 +16,7 @@ const Marquee = async () => {
             <MarqueeText direction='right' duration={10} className='max-w-7xl mx-auto'>
                 {
                     datas.map(n => (
-                        <Link key={n.id} href={``}>
+                        <Link key={n.id} href={`/product/${n.id}`}>
                             <div  className="flex items-center gap-2 pb-1  hover:border-b mx-4">
                                 <span className="text-xl">{n.image}</span>
                                 <span className="text-green-900">
