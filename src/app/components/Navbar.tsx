@@ -10,13 +10,16 @@ const Navbar = () => {
             <div className="container mx-auto my-3 flex items-center justify-between gap-3 px-4 md:my-4">
                 {/* Logo + title */}
                 <div className="flex min-w-0 items-center gap-2 sm:gap-4">
-                    <Image
+                    <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-[10px] bg-green-600 sm:h-12 sm:w-12 sm:rounded-2xl">
+                        <span className="text-xl leading-none sm:text-3xl">🛒</span>
+                    </div>
+                    {/* <Image
                         src={"/logo-icon.png"}
                         alt="logo"
                         height={40}
                         width={45}
                         className="h-9 w-9 shrink-0 rounded-xl bg-green-600 p-1 sm:h-10 sm:w-[45px] sm:rounded-2xl"
-                    />
+                    /> */}
                     <div className="min-w-0">
                         <h2 className="truncate text-base font-semibold sm:text-[20px]">
                             বাজার দর
