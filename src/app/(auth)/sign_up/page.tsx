@@ -70,14 +70,22 @@ const SignUpPage = () => {
 
                 </fieldset>
             </form>
-            <div className="flex gap-3 items-center justify-center">
-                <button onClick={() => handleSocial('google')}
-                    className="flex gap-1 items-center font-semibold cursor-pointer py-1 px-2 border rounded text-green-700 border-gray-500">
-                    <span><FaGoogle/></span>Google</button>
-                <p className="text-2xl">|</p>
-                <button onClick={() => handleSocial('github')}
-                    className="flex gap-1 items-center font-semibold cursor-pointer py-1 px-2 border rounded text-green-700 border-gray-500">
-                    <span><FaGithub/></span>GitHub</button>
+            <div className="flex flex-col sm:flex-row gap-3 items-center justify-center w-full max-w-md mx-auto">
+                <button
+                    onClick={() => handleSocial('google')}
+                    className="group flex flex-1 w-full items-center justify-center gap-2.5 rounded-xl border border-gray-200 bg-white px-5 py-2.5 text-sm font-semibold text-gray-700 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-gray-300 hover:bg-gray-50 hover:shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-red-400 focus-visible:ring-offset-2 active:translate-y-0 active:scale-[0.98] cursor-pointer"
+                >
+                    <FaGoogle className="text-lg text-red-500 transition-transform duration-200 group-hover:scale-110" />
+                    <span>Google</span>
+                </button>
+
+                <button
+                    onClick={() => handleSocial('github')}
+                    className="group flex flex-1 w-full items-center justify-center gap-2.5 rounded-xl border border-gray-900 bg-gray-900 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-gray-800 hover:shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-700 focus-visible:ring-offset-2 active:translate-y-0 active:scale-[0.98] cursor-pointer"
+                >
+                    <FaGithub className="text-lg transition-transform duration-200 group-hover:scale-110" />
+                    <span>GitHub</span>
+                </button>
             </div>
         </div>
     );
