@@ -2,6 +2,7 @@
 import { signIn, signUp } from '@/app/lib/auth-client';
 import { useRouter } from 'next/navigation';
 import React from 'react';
+import { FaGithub, FaGoogle } from 'react-icons/fa';
 import { toast } from 'react-toastify';
 
 const fileToBase64 = (file: File): Promise<string> =>
@@ -48,7 +49,7 @@ const SignUpPage = () => {
     };
 
     return (
-        <div className="p-10 grid justify-center ">
+        <div className="pt-5 pb-10 grid justify-center ">
             <form onSubmit={onSubmit}>
                 <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
                     <legend className="fieldset-legend text-2xl font-semibold">সাইন আপ</legend>
@@ -70,9 +71,13 @@ const SignUpPage = () => {
                 </fieldset>
             </form>
             <div className="flex gap-3 items-center justify-center">
-                <button onClick={() => handleSocial('google')} className="font-semibold cursor-pointer py-1 px-2 border rounded text-red-700 border-gray-500">Google</button>
+                <button onClick={() => handleSocial('google')}
+                    className="flex gap-1 items-center font-semibold cursor-pointer py-1 px-2 border rounded text-green-700 border-gray-500">
+                    <span><FaGoogle/></span>Google</button>
                 <p className="text-2xl">|</p>
-                <button onClick={() => handleSocial('github')} className="font-semibold cursor-pointer py-1 px-2 border rounded text-red-700 border-gray-500">GitHub</button>
+                <button onClick={() => handleSocial('github')}
+                    className="flex gap-1 items-center font-semibold cursor-pointer py-1 px-2 border rounded text-green-700 border-gray-500">
+                    <span><FaGithub/></span>GitHub</button>
             </div>
         </div>
     );
