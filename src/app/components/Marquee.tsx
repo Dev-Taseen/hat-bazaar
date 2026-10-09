@@ -13,7 +13,7 @@ const Marquee = async () => {
         <div
             className="bg-white flex items-center gap-2 px-3 py-2 rounded-lg  transition-colors"
         >
-            <MarqueeText direction='right' duration={12} className='max-w-7xl mx-auto'>
+            <MarqueeText direction='right' duration={10} pauseOnHover={true} className='max-w-7xl mx-auto'>
                 {
                     datas.map(n => (
                         <Link key={n.id} href={`/product/${n.id}`}>
