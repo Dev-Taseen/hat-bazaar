@@ -1,4 +1,5 @@
-import Image from "next/image";
+
+import AuthLinks from "./authlinks";
 import CategoryList from "./category";
 
 const Navbar = () => {
@@ -13,13 +14,6 @@ const Navbar = () => {
                     <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-[10px] bg-green-600 sm:h-12 sm:w-12 sm:rounded-2xl">
                         <span className="text-xl leading-none sm:text-3xl">🛒</span>
                     </div>
-                    {/* <Image
-                        src={"/logo-icon.png"}
-                        alt="logo"
-                        height={40}
-                        width={45}
-                        className="h-9 w-9 shrink-0 rounded-xl bg-green-600 p-1 sm:h-10 sm:w-[45px] sm:rounded-2xl"
-                    /> */}
                     <div className="min-w-0">
                         <h2 className="truncate text-base font-semibold sm:text-[20px]">
                             বাজার দর
@@ -34,12 +28,7 @@ const Navbar = () => {
 
                 {/* Auth buttons */}
                 <div className="flex shrink-0 gap-2 text-sm font-semibold sm:gap-2.5 sm:text-[16px]">
-                    <button className="cursor-pointer whitespace-nowrap rounded border border-gray-400 px-2 py-1 sm:px-2.5 sm:py-1.5">
-                        সাইন ইন
-                    </button>
-                    <button className="cursor-pointer whitespace-nowrap rounded border border-gray-500 bg-green-700 px-2 py-1 text-white sm:px-2.5 sm:py-1.5">
-                        সাইন আপ
-                    </button>
+                 <AuthLinks/>
                 </div>
             </div>
 

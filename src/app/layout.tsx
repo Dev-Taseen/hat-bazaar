@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import { Suspense } from "react";
 import Marquee from "./components/Marquee";
 import Footer from "./components/Footer";
+import ToastProvider from "./components/ToastProvider";
 
 
 const NotoSerifBengali = Noto_Serif_Bengali({
@@ -26,6 +27,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${NotoSerifBengali.className}  h-full antialiased`}
     >
       <body>
+        <ToastProvider/>
         <Suspense fallback={<div>Loading…</div>}>
         <Navbar/>
         </Suspense>
