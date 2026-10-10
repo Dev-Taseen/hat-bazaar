@@ -110,16 +110,17 @@ export default function CategoryProducts({ products }: { products: ProductType[]
       </section>
 
       {/* Toolbar */}
-      <div className="mt-8 flex items-center justify-between">
-        <p className="text-gray-600">
+      <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+        <p className="text-sm text-gray-600 sm:text-base">
           মোট {bn(sorted.length)}টি পণ্য দেখানো হচ্ছে
         </p>
-        <label className="flex items-center gap-3 text-gray-600">
-          সাজান
+
+        <label className="flex w-full items-center justify-between gap-3 text-sm text-gray-600 sm:w-auto sm:justify-start sm:text-base">
+          <span className="shrink-0">সাজান</span>
           <select
             value={sort}
             onChange={(e) => setSort(e.target.value as SortKey)}
-            className="rounded-xl border border-gray-200 bg-white px-4 py-2 text-gray-900 outline-none"
+            className="w-full min-w-0 rounded-xl border border-gray-200 bg-white px-4 py-2 text-sm text-gray-900 outline-none focus:border-green-500 focus:ring-2 focus:ring-green-200 sm:w-auto sm:text-base"
           >
             {sortOptions.map((o) => (
               <option key={o.key} value={o.key}>

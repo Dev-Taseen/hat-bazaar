@@ -1,5 +1,5 @@
 import CategoryProducts from "@/app/components/CategoryProducts";
-import Link from "next/link";
+
 
 const toBnDigits = (input: string | number) => {
   const bn = ["০", "১", "২", "৩", "৪", "৫", "৬", "৭", "৮", "৯"];
